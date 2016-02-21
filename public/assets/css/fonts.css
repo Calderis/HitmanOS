@@ -1,0 +1,17 @@
+/*@import url(https://fonts.googleapis.com/css?family=Quantico:400,700);*/
+@font-face {
+  font-family: Quantico;
+  src: url(../fonts/Quantico-Regular.ttf);
+}
+@font-face {
+  font-family: Quantico-italic;
+  src: url(../fonts/Quantico-Italic.ttf);
+}
+@font-face {
+  font-family: Quantico-bold;
+  src: url(../fonts/Quantico-Bold.ttf);
+}
+@font-face {
+  font-family: Quantico-bold-italic;
+  src: url(../fonts/Quantico-BoldItalic.ttf);
+}

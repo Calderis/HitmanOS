@@ -1,0 +1,293 @@
+/* CHARTE GRAPHIQUE */
+/* line 11, ../sass/style.scss */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* line 15, ../sass/style.scss */
+body {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: fixed;
+  background-color: #020d0a;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 21, ../sass/style.scss */
+body .desktop {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-image: url(../images/logo-medium.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+/* line 37, ../sass/style.scss */
+.mini-windowed {
+  width: 300px;
+  display: block;
+  background-color: rgba(2, 13, 10, 0.97);
+  position: absolute;
+  border: 2px solid rgba(253, 2, 26, 0.5);
+  border-radius: 1px;
+  -moz-box-shadow: 0 0 20px 5px black;
+  -webkit-box-shadow: 0 0 20px 5px black;
+  -o-box-shadow: 0 0 20px 5px black;
+  box-shadow: 0 0 20px 5px black;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=black, Direction=NaN, Strength=50);
+  animation: pop 0.8s ease 0s 1;
+}
+/* line 50, ../sass/style.scss */
+.mini-windowed.closed {
+  animation: popout 0.5s ease 0s 1;
+  transform: scale(0);
+}
+/* line 54, ../sass/style.scss */
+.mini-windowed header {
+  padding: 9px 5px 9px 10px;
+  border-bottom: 1px solid black;
+  background-image: url(../images/transparency.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 61, ../sass/style.scss */
+.mini-windowed header h1 {
+  color: #fd021a;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-family: Quantico;
+  display: inline-block;
+}
+/* line 68, ../sass/style.scss */
+.mini-windowed header .actions {
+  display: inline-block;
+  float: right;
+}
+/* line 74, ../sass/style.scss */
+.mini-windowed header .actions li {
+  cursor: pointer;
+  font-family: Quantico;
+  padding: 0 5px;
+  display: inline-block;
+}
+/* line 82, ../sass/style.scss */
+.mini-windowed .content {
+  padding: 8px 24px 32px 24px;
+  background-image: url(../images/transparency.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 88, ../sass/style.scss */
+.mini-windowed .content .block {
+  padding: 8px 0;
+}
+/* line 90, ../sass/style.scss */
+.mini-windowed .content .block .title {
+  font-family: Quantico;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #fd021a;
+  padding-bottom: 10px;
+}
+/* line 96, ../sass/style.scss */
+.mini-windowed .content .block .title h2 {
+  display: inline-block;
+}
+/* line 102, ../sass/style.scss */
+.mini-windowed .separator {
+  background-color: rgba(253, 2, 26, 0.5);
+  border-left: 6px solid #fd021a;
+  border-right: 6px solid #fd021a;
+  width: 95%;
+  display: block;
+  height: 1px;
+}
+/* line 110, ../sass/style.scss */
+.mini-windowed .hollowed {
+  position: absolute;
+  margin: auto;
+  width: 80%;
+}
+/* line 114, ../sass/style.scss */
+.mini-windowed .hollowed .separator {
+  width: 95%;
+}
+/* line 117, ../sass/style.scss */
+.mini-windowed .hollowed h3 {
+  display: block;
+  margin: 2px 0;
+  background-color: rgba(253, 2, 26, 0.5);
+  color: #fd021a;
+  font-size: 2em;
+  padding: 10px 0;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  font-family: Quantico;
+}
+
+/* line 132, ../sass/style.scss */
+#login {
+  margin: 200px;
+}
+/* line 134, ../sass/style.scss */
+#login .profile-pict {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgba(253, 2, 26, 0.5);
+  text-align: center;
+  padding: 10px;
+}
+/* line 141, ../sass/style.scss */
+#login .profile-pict img {
+  width: 100%;
+}
+/* line 145, ../sass/style.scss */
+#login .logs {
+  height: 50px;
+  overflow: hidden;
+  display: inline-block;
+  width: 180px;
+  float: right;
+  color: white;
+  opacity: 0.5;
+  font-family: Quantico;
+  font-size: 0.6em;
+}
+/* line 159, ../sass/style.scss */
+#login #identification {
+  color: white;
+  opacity: 0.5;
+  padding-left: 10px;
+}
+/* line 164, ../sass/style.scss */
+#login .cases {
+  padding: 12px 0px;
+  text-align: center;
+}
+/* line 167, ../sass/style.scss */
+#login .cases li {
+  height: 23px;
+  width: 20px;
+  display: inline-block;
+  margin: 0 2px;
+  border: 2px solid #fd021a;
+  padding: 2px;
+}
+/* line 174, ../sass/style.scss */
+#login .cases li span {
+  height: 100%;
+  width: 100%;
+  color: #fd021a;
+  font-family: Quantico;
+  overflow: hidden;
+  font-size: 1.5em;
+  text-align: center;
+  display: block;
+  transition-duration: 0.3s;
+  transition-property: all;
+}
+/* line 185, ../sass/style.scss */
+#login .cases li span.active {
+  background-color: #fd021a;
+}
+/* line 191, ../sass/style.scss */
+#login .msg-granted {
+  margin-left: 30px;
+  margin-top: -30px;
+  opacity: 0;
+  height: 0px;
+  overflow: hidden;
+  padding-top: 21px;
+  animation: granted2 2s ease 0s 1;
+}
+/* line 199, ../sass/style.scss */
+#login .msg-granted.accepted {
+  height: auto;
+}
+/* line 201, ../sass/style.scss */
+#login .msg-granted.accepted h3 {
+  overflow: hidden;
+  animation: granted 2s ease 0s 1;
+}
+
+/*GRANTED*/
+@keyframes granted {
+  0% {
+    height: 0px;
+    padding: 0;
+  }
+  10% {
+    height: 0px;
+    padding: 0;
+  }
+  30% {
+    height: 32px;
+    padding: 10px 0;
+  }
+  70% {
+    height: 32px;
+    padding: 10px 0;
+  }
+  90% {
+    height: 0px;
+    padding: 0;
+  }
+  100% {
+    height: 0px;
+    padding: 0;
+  }
+}
+@keyframes granted2 {
+  0% {
+    padding-top: 21px;
+    opacity: 0;
+  }
+  10% {
+    padding-top: 21px;
+    opacity: 1;
+  }
+  30% {
+    padding-top: 0;
+    opacity: 1;
+  }
+  70% {
+    padding-top: 0;
+    opacity: 1;
+  }
+  90% {
+    padding-top: 21px;
+    opacity: 1;
+  }
+  100% {
+    padding-top: 21px;
+    opacity: 0;
+  }
+}
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes popout {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

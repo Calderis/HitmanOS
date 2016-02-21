@@ -1,0 +1,30 @@
+<!--Login-->
+  <section id="login" class="mini-windowed" ng-init="appCtrl.addWindow('login')">
+	<header class="grab">
+		<h1>Password request</h1>
+		<ul class="actions">
+			<li class="blocked"></li>
+		</ul>
+	</header>
+	<section class="content">
+		<div class="block">
+			<div class="profile-pict">
+				<img src="public/assets/images/logo-medium.png" alt="">
+			</div>
+			<div class="logs"><p ng-repeat="log in logs">{{log}}</p></div>
+		</div>
+		<div class="block">
+			<div class="title" ng-click="login[0].value = 1"><h2 id="log-stat">System lock</h2><h2 id="identification">ID **********</h2></div>
+			<span class="separator"></span>
+			<ul class="cases">
+				<li ng-repeat="l in login"><span class="{{l.class}}" ng-model="l.value">{{l.value}}</span></li>
+			</ul>
+			<span class="separator"></span>
+		</div>
+	</section>
+	<div class="msg-granted hollowed accepted" ng-show="access">
+		<span class="separator"></span>
+		<h3 class="granted">granted</h3>
+		<span class="separator"></span>
+	</div>
+  </section>

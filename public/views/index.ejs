@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="Hack">
+    <head>
+        <meta charset="utf-8" />
+        <title>Hack City</title>
+        <meta name="description" content="Description du site">
+        
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>-->
+        <script type="text/javascript" src="public/assets/js/angular.min.js"></script>
+        <script type="text/javascript" src="public/assets/js/angular-sanitize.js"></script>
+        
+        <link rel="stylesheet" href="public/assets/css/reset.css">
+        <link rel="stylesheet" href="public/assets/css/fonts.css" media="screen">
+        <link rel="stylesheet" href="public/assets/css/style-dist.css" media="screen">
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="public/app.js"></script>
+        <script type="text/javascript" src="public/assets/js/keyCodes.js"></script>
+    </head>
+ 
+    <body  ng-controller="appController as appCtrl"  keyboard="appCtrl.keys">      
+      <section class="desktop" id="desktop" ng-keypress="applyKey($event);">
+		  <login></login>
+      </section>
+      {{login}}
+       
+       <script src="public/assets/js/jquery-2.1.4.min.js"></script>
+       <script src="public/assets/js/draggabilly.js"></script>
+    </body>
+</html>

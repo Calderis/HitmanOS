@@ -1,0 +1,20 @@
+{
+  "name": "FourFaction",
+  "version": "1.0.0",
+  "description": "Jeu fonctionnel",
+  "main": "app/serveur.js",
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.46",
+    "body-parser": "^1.14.1",
+    "ejs": "^1.0.0",
+    "ent": "^2.0.0",
+    "express": "^4.10.2",
+    "socket.io": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rémi Wetteren",
+  "license": "ISC"
+}
