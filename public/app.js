@@ -29,7 +29,6 @@
 			  handle: '.grab'
 			});
 			$scope.nav.windows[name].click(function(){
-				console.log(this);
 				$scope.nav.focus = name;
 			});
 		}
@@ -51,7 +50,7 @@
 			FIVE : function(name, code) { tip(code); },
 			SIX : function(name, code) { tip(code); },
 			SEVEN : function(name, code) { tip(code); },
-			HEIGHT : function(name, code) { tip(code); },
+			EIGHT : function(name, code) { tip(code); },
 			NINE : function(name, code) { tip(code); }
 		  };
 		function tip(code){
