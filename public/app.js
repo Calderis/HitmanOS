@@ -28,7 +28,10 @@
 			$draggable = $('.mini-windowed').draggabilly({
 			  handle: '.grab'
 			});
-			$scope.nav.windows[name].click(function(){$scope.nav.focus = name;});
+			$scope.nav.windows[name].click(function(){
+				console.log(this);
+				$scope.nav.focus = name;
+			});
 		}
 		$scope.showWindow = function(name){
 			$scope.nav.windows[name].show();
@@ -40,16 +43,16 @@
 		}
 		/****** CLAVIER *****/
 		this.keys = {
-			NUMPAD_0 : function(name, code) { tip(code); },
-			NUMPAD_1 : function(name, code) { tip(code); },
-			NUMPAD_2 : function(name, code) { tip(code); },
-			NUMPAD_3 : function(name, code) { tip(code); },
-			NUMPAD_4 : function(name, code) { tip(code); },
-			NUMPAD_5 : function(name, code) { tip(code); },
-			NUMPAD_6 : function(name, code) { tip(code); },
-			NUMPAD_7 : function(name, code) { tip(code); },
-			NUMPAD_8 : function(name, code) { tip(code); },
-			NUMPAD_9 : function(name, code) { tip(code); }
+			ZERO : function(name, code) { tip(code); },
+			ONE : function(name, code) { tip(code); },
+			TWO : function(name, code) { tip(code); },
+			THREE : function(name, code) { tip(code); },
+			FOUR : function(name, code) { tip(code); },
+			FIVE : function(name, code) { tip(code); },
+			SIX : function(name, code) { tip(code); },
+			SEVEN : function(name, code) { tip(code); },
+			HEIGHT : function(name, code) { tip(code); },
+			NINE : function(name, code) { tip(code); }
 		  };
 		function tip(code){
 			if($scope.nav.focus == "login") tipCode(code)
@@ -72,15 +75,25 @@
 		
 		var tipCode = function(code){
 			switch(code){
-				case 96:  number = 0; break;	
-				case 97:  number = 1; break;	
-				case 98:  number = 2; break;	
-				case 99:  number = 3; break;	
-				case 100: number = 4; break;	
-				case 101: number = 5; break;	
-				case 102: number = 6; break;	
-				case 103: number = 7; break;	
-				case 104: number = 8; break;	
+				case 48:  number = 0; break;
+				case 49:  number = 1; break;
+				case 50:  number = 2; break;
+				case 51:  number = 3; break;
+				case 52:  number = 4; break;
+				case 53:  number = 5; break;
+				case 54:  number = 6; break;
+				case 55:  number = 7; break;
+				case 56:  number = 8; break;
+				case 57:  number = 9; break;
+				case 96:  number = 0; break;
+				case 97:  number = 1; break;
+				case 98:  number = 2; break;
+				case 99:  number = 3; break;
+				case 100: number = 4; break;
+				case 101: number = 5; break;
+				case 102: number = 6; break;
+				case 103: number = 7; break;
+				case 104: number = 8; break;
 				case 105: number = 9; break;
 			}
 					
@@ -119,7 +132,7 @@
 			this.y = y;
 			this.width = width;
 			this.height = height;
-			this.content = content || "";
+			this.content = content || null;
 			this.anchor = anchor || "desktop";
 			
 			this.remove = function(){
